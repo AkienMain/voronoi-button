@@ -414,20 +414,6 @@ function calcCells(points, cellInput) {
   return cells;
 }
 
-function closeConvex(pointsInput) {
-  let points = [...pointsInput];
-  points.push(points[0]);
-  return points;
-}
-
-function listRound(list, digit) {
-  res = []
-  for (let i=0; i<list.length; i++) {
-    res.push(math.round(list[i], digit));
-  }
-  return  res;
-}
-
 function physicalSimulation(points, vel) {
   for (let i=0; i<points.length; i++) {
     let acc1_ = [0,0]; // repulsion between each points
