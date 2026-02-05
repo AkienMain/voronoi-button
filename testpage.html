@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.8.1/math.min.js"></script>
+    <script src="voronoi-button.js"></script>
+    <script>
+function example1(index) {
+  let link = "";
+  if (index%3 == 0) link = "https://akienmain.github.io/web-site/";
+  if (index%3 == 1) link = "https://akienmain.github.io/p5js-works/";
+  if (index%3 == 2) link = "https://akienmain.github.io/web-site/";
+  window.open(link, 'popup');
+}
+function example2(index) {
+  window.alert(`index = ${index}`);
+}
+    </script>
+  </head>
+  <body>
+    <div>
+      <voronoi-button
+        n-cells="6"
+        colors="#FFFFCCAF, #FFCCFFAF, #CCFFFFAF"
+        srcs="https://raw.githubusercontent.com/AkienMain/sudoku_solver/refs/heads/master/output/sample.png/output.png, https://github.com/AkienMain/p5js-works/blob/main/work001-voronoi/images/image_001.png?raw=true, https://github.com/AkienMain/yogapose-classification-ocr/blob/main/README_img/004.png?raw=true"
+        width="400"
+        height="400"
+        border-radius="20"
+        onclick="example1(this.index)"
+      />
+    </div>
+    <div>
+      <voronoi-button
+        n-cells="3"
+        colors="#FFFFCC, #FFCCFF, #CCFFFF"
+        color-selected="#FF3939"
+        width="200"
+        height="60"
+        border-radius="4"
+        threshold-sim="0.1"
+        onclick="example2(this.index)"
+      />
+    </div>
+    <div>
+      <voronoi-button/>
+    </div>
+  </body>
+</html>

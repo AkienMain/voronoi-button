@@ -1,0 +1,23 @@
+{
+  "name": "voronoi-button",
+  "version": "1.0.0",
+  "description": "HTMLElement of button devided by voronoi cells.",
+  "main": "voronoi-button.js",
+  "author": "akienmain <akienmain@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mathjs": "*"
+  },
+  "keywords": [
+    "voronoi",
+    "diagram",
+    "geometry",
+    "HTMLElement",
+    "button"
+  ],
+  "homepage": "https://github.com/AkienMain/voronoi-button",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AkienMain/voronoi-button.git"
+  }
+}
