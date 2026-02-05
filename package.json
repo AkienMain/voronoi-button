@@ -1,6 +1,6 @@
 {
   "name": "voronoi-button",
-  "version": "1.0.0",
+  "version": "1.0.01",
   "description": "HTMLElement of button devided by voronoi cells.",
   "main": "voronoi-button.js",
   "author": "akienmain <akienmain@gmail.com>",
